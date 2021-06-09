@@ -2,36 +2,25 @@ package Practice;
 
 import java.util.Scanner;
 
-public class practice5 
+public class practice5 // í•™ì ê³„ì‚°
 {
-	public static void main(String[] args)
-	{
-		System.out.println("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+	public static void main(String[] args) {
+		System.out.println("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		Scanner scanner = new Scanner(System.in);
-		int point =scanner.nextInt();
-		
-		if(point>=90)
-		{
-			System.out.println("ÇĞÁ¡:A");
-		}
-		else if(90>point && point>=80)
-		{
-			System.out.println("ÇĞÁ¡:B");
-		}		
-		else if(80>point && point>=70)
-		{
-			System.out.println("ÇĞÁ¡:C");
-		}
-		else if(70>point && point>=60)
-		{
-			System.out.println("ÇĞÁ¡:D");
-		}
-		else
-		{
-			System.out.println("ÇĞÁ¡:F");
+		int point = scanner.nextInt();
+
+		if (point >= 90) {
+			System.out.println("í•™ì :A");
+		} else if (90 > point && point >= 80) {
+			System.out.println("í•™ì :B");
+		} else if (80 > point && point >= 70) {
+			System.out.println("í•™ì :C");
+		} else if (70 > point && point >= 60) {
+			System.out.println("í•™ì :D");
+		} else {
+			System.out.println("í•™ì :F");
 		}
 		scanner.close();
-		
 
 	}
 

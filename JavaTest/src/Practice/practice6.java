@@ -3,10 +3,10 @@ package Practice;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class practice6 // 10¸í ÇĞ»ı Á¡¼ö ÇÕ°è¿Í Æò±Õ
+public class practice6 // í•©ê³„ì™€ í‰ê· 
 {
 	public static void main(String args[]) {
-		System.out.println("10¸íÀÇ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+		System.out.println("10ëª…ì˜ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		Scanner scanner = new Scanner(System.in);
 		int[] j = new int[10];
 		int sum = 0;
@@ -15,9 +15,7 @@ public class practice6 // 10¸í ÇĞ»ı Á¡¼ö ÇÕ°è¿Í Æò±Õ
 			sum += j[i];
 		}
 
-		System.out.print("ÇÕ°è:" + sum);
-		System.out.print("Æò±Õ:" + sum / j.length);
-
+		System.out.print("í•©ê³„:" + sum);
+		System.out.print("í‰ê· :" + sum / j.length);
 	}
-
 }

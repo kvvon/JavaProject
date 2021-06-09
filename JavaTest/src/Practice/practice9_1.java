@@ -1,23 +1,36 @@
 package Practice;
+
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class practice9_1 {
-	public static void main(String args[]) {
-		System.out.println("ÀÓÀÇÀÇ Á¤¼ö¸¦ 5°³ ÀÔ·ÂÇÏ¼¼¿ä!");
-		Scanner scanner = new Scanner(System.in);
-		int[] input = new int[5];
-		int sum =0;
-
-			
-			for (int i = 0; i < 5; i++) {
-				input[i] = scanner.nextInt();
-			    sum += input[i];
-			}
-			System.out.print("ÇÕ°è:"+sum);
+public class practice9_1 { // í•©ê³„ ì‚°ì¶œ ë©”ì„œë“œ
+	public static int sum(int[] arr) {
+		int sum = 0;
+		for (int i = 0; i < 5; i++) {
+			sum += arr[i];
 		}
-		
+		return sum;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Aì§‘í•©ì— ë“¤ì–´ê°ˆ 5ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
+		Scanner scanner = new Scanner(System.in);
+		int[] input_a = new int[5];
+		for (int i = 0; i < 5; i++) {
+			input_a[i] = scanner.nextInt();
+		}
+		System.out.println("Bì§‘í•©ì— ë“¤ì–´ê°ˆ 5ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
+		int[] input_b = new int[5];
+		for (int i = 0; i < 5; i++) {
+			input_b[i] = scanner.nextInt();
+		}
+		int sum_a = sum(input_a);
+		System.out.println("Sum<A>:" + sum_a);
+		int sum_b = sum(input_b);
+		System.out.println("Sum<B>:" + sum_b);
 
 	}
+
+}
 
 

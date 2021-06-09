@@ -1,28 +1,23 @@
 package Practice;
+
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class practice9 {
-	public static void main(String args[])
-	{
-		System.out.println("Hello, World¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+public class practice9 { // ì‹œì €ì˜ ì•”í˜¸
+	public static void main(String args[]) {
+		System.out.println("Hello, Worldë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
 		Scanner scanner = new Scanner(System.in);
 		String input = scanner.nextLine();
 		char[] output = input.toCharArray();
-		for(int i =0; i<output.length; i++)
-		{
-			if(output[i]>= 'a' && output[i]<='z')
-			{
-				output[i] = (char)(output[i]+3);
-			}
-			else if(output[i]>='A' && output[i] <='Z')
-			{
-				output[i] = output[i] = (char)(output[i]+3);
+		for (int i = 0; i < output.length; i++) {
+			if (output[i] >= 'a' && output[i] <= 'z') {
+				output[i] = (char) (output[i] + 3);
+			} else if (output[i] >= 'A' && output[i] <= 'Z') {
+				output[i] = output[i] = (char) (output[i] + 3);
 			}
 		}
 		System.out.print(output);
-		
+
 	}
-	
 
 }

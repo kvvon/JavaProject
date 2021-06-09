@@ -1,42 +1,26 @@
 package Practice;
-import java.util.Scanner;
 
-public class practice10 {
-	public static void main(String args[])//(3 + 5 - 2) X 2 / 3 = 4
-	{
-		System.out.print("µÎ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
-		Scanner scanner = new Scanner(System.in);
-		int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        System.out.println(a + "+" + b + "=" + add(a,b));
-        System.out.println(a + "-" + b + "=" + subtract(a,b));
-        System.out.println(a + "*" + b + "=" + multiply(a,b));
-        System.out.println(a + "/" + b + "=" + divide(a,b));
+public class practice10 { // ì‚¬ì¹™ì—°ì‚° ë©”ì„œë“œ (3+5-2)x2/3=4
+	public static int add(int x, int y) {
+		return x + y;
+	}
 
-        System.out.println("("+a + "+"+ add(a,b) +"-"+ b +")X"+b+"/"+a+"="
-        		+ result(a,b));
-        
+	public static int substract(int x, int y) {
+		return x - y;
+	}
 
+	public static int divide(int x, int y) {
+		return x / y;
+	}
 
-    }
-    static double add (int x, int y)
-    {
-        return x+y;
-    }
-    static double subtract (int x, int y)
-    {
-        return x-y;
-    }
-    static double divide (int x, int y)
-    {
-        return x/y;
-    }
-    static double multiply (int x, int y)
-    {
-        return x*y;
-    }
-    static double result (int x, int y)
-    {
-    	return (x + (x+y) - y) * y / x;
-    }
+	public static int multiply(int x, int y) {
+		return x * y;
+	}
+
+	public static void main(String[] args) {
+
+		System.out.print("(3 + 5 - 2) x 2 / 3 = ");
+		System.out.println(divide(multiply(substract(add(3, 5), 2), 2), 3));
+	}
+
 }

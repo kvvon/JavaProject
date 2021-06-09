@@ -1,15 +1,13 @@
 package Practice;
 
-public class practice2 //ÃÑÇÕ ±¸ÇÏ±â
+public class practice2 // 1~100 í•©ê³„ êµ¬í•˜ê¸°
 {
-	public static void main(String[] args)
-	{
-		int sum=0;
-		for(int i=0;i<=100;i++)
-		{
+	public static void main(String[] args) {
+		int sum = 0;
+		for (int i = 0; i <= 100; i++) {
 			sum += i;
 		}
-		System.out.println("ÃÑÇÕ:"+sum);
-		
+		System.out.println("í•©ê³„:" + sum);
+
 	}
 }

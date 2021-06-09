@@ -2,19 +2,18 @@ package Practice;
 
 import java.util.Scanner;
 
-public class practice1 //¼·¾¾¸¦ È­¾¾ º¯È¯
+public class practice1 // ì„­ì”¨ë¥¼ í™”ì”¨ ë³€í™˜
 {
-	public static void main(String[] arg)
-	{
+	public static void main(String[] arg) {
 		Scanner scanner = new Scanner(System.in);
-	
-		System.out.println("¼·¾¾¸¦ÀÔ·ÂÇÏ¼¼¿ä:");
-		double Celsius_temperature = scanner.nextDouble(); // ¼·¾¾
-		double Fahrenheit_temperature= (Celsius_temperature * 9/5) + 32;
-		
-		System.out.println("¼·¾¾:"+Celsius_temperature);
-		System.out.println("È­¾¾:"+Fahrenheit_temperature);
-		
+
+		System.out.println("ì„­ì”¨ì˜¨ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
+		double Celsius_temperature = scanner.nextDouble(); // ì„­ì”¨
+		double Fahrenheit_temperature = (Celsius_temperature * 9 / 5) + 32; 
+
+		System.out.println("ì„­ì”¨:" + Celsius_temperature);
+		System.out.println("í™”ì”¨:" + Fahrenheit_temperature);
+
 		scanner.close();
 	}
 

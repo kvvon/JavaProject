@@ -2,22 +2,18 @@ package Practice;
 
 import java.util.Scanner;
 
-public class practice4 //*Æ®¸® Ãâ·ÂÇÏ±â
+public class practice4 // ë³„í‘œ ì¶œë ¥
 {
-	public static void main(String args[])
-	{
-		System.out.println("Ãâ·ÂµÉ Ãþ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+	public static void main(String args[]) {
+		System.out.println("ì¤„ ìˆ˜ë¥¼ ìž…ë ¥ í•˜ì„¸ìš”:");
 		Scanner scanner = new Scanner(System.in);
-		int i=scanner.nextInt();
-		int a,b;
-		for(a=0;a<=i;a++)
-		{
-			for(b=0;b<a;b++)
-			{
+		int i = scanner.nextInt();
+		int a, b;
+		for (a = 0; a <= i; a++) {
+			for (b = 0; b < a; b++) {
 				System.out.print("*");
 			}
 			System.out.print("\n");
 		}
 	}
-
 }
